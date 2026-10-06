@@ -4,14 +4,56 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="5 3 0" rotation="0 30 90" wireframe=true>
-        <a-box width="1.5" height="1.8" depth="2.9" position="0 1.1 0" color=#1f1702 ></a-box>
-        <a-cylinder radius="0.1" height="2" position="-0.81 1.2 1" color="black"></a-cylinder>
-       <a-cylinder radius="0.1" height="2" position="-0.81 1.2 -1" color="black"></a-cylinder>
-        <a-cylinder radius="0.08" height="2.001" position="-0.805 1.2 -1" color="#2b2103"></a-cylinder>     
-            
-        <a-cylinder radius="0.08" height="2.001" position="-0.8 1.2 1" color="#2b2103"></a-cylinder>
+ <!--<a-sky src="sky3.0.jpg">
+ <a-plane src="road.jpg" repeat="10 10"  position="0 0 -4" rotation="-90 0 0" width="10" height="10"></a-plane>
+-->
+ <a-box wireframe=" true" rotation="0 90 0"  position="0.1 0.2 1">
+  <a-box
+        position="0 1.05 0"
+        width="6"
+        height="0.35"
+        depth="2.4"
+        color="#111111">
+    </a-box>
 
+    <!-- Lower side boards -->
+    <a-box
+        position="0 1.35 1.05"
+        width="5.5"
+        height="0.5"
+        depth="0.18"
+        color="#111111">
+    </a-box>
+
+    <a-box
+        position="0 1.35 -1.05"
+        width="5.5"
+        height="0.5"
+        depth="0.18"
+        color="#111111">
+    </a-box>
+
+</a-box>
+
+<a-box wireframe=" true"   position="2 2.8 1" rotation=" 0 90 0" >
+<a-box width="1.4" height="0.3" depth="0.3" position="5 3.9 1" color="#1f1702" rotation="0 0 0"></a-box>
+ <a-torus arc="55" radius="1.2" radius-tubular="0.08" position="5 2.8 1" color="Brown"></a-torus>
+<a-box width="1.4" height="0.3" depth="0.3" position="6.8 2.9 1" color="#1f1702" rotation="0 0 0"></a-box>
+<a-box width="1.4" height="0.3" depth="0.3" position="8 3.4 1" color="#1f1702" rotation="0 0 45"></a-box>
+<a-box width="1.4" height="0.3" depth="0.3" position="9 3.9 1" color="#1f1702" rotation="0 0 0"></a-box>
+</a-box>
+      
+
+
+      
+<!--wheels-->
+<a-box wireframe=" true" rotation="0 0 90"  position="1 2 1" scale="1 1.5 1">
+  
+
+  <a-box  position="-0.81 -1 -1" wireframe=" true" rotation="0 0 0">
+<!--axel 1-->
+<a-cylinder radius="0.1" height="2" position="-0.81 1.2 -1" color="black"></a-cylinder>
+<a-cylinder radius="0.08" height="2.001" position="-0.805 1.2 -1" color="#2b2103"></a-cylinder> 
 
 <a-box   scale="0.3 0.3 1" position="-0.81 2 -1" rotation="90 0 90" wireframe=true>
   <a-torus arc="365" radius="1" radius-tubular="0.04"  color="black"></a-torus>   
@@ -22,46 +64,65 @@
             <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 90"></a-cylinder>
             <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 120"></a-cylinder> 
             <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 150"></a-cylinder>  
-            </a-box>   
-            
-            
-<a-box   scale="0.3 0.3 1" position="-0.81 2 1" rotation="90 0 90" wireframe=true>
-  <a-torus arc="365" radius="1" radius-tubular="0.04"  color="black"></a-torus>   
- <a-torus arc="365" radius="1.2" radius-tubular="0.07"  color="white"></a-torus>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 0"></a-cylinder>    
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 30"></a-cylinder>   
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 60"></a-cylinder>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 90"></a-cylinder>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 120"></a-cylinder> 
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 150"></a-cylinder>  
-            </a-box>   
-
-<a-box   scale="0.3 0.3 1" position="-0.81 -0.001 1" rotation="90 0 90" wireframe=true>
-  <a-torus arc="365" radius="1" radius-tubular="0.04"  color="black"></a-torus>   
- <a-torus arc="365" radius="1.2" radius-tubular="0.07"  color="white"></a-torus>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 0"></a-cylinder>    
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 30"></a-cylinder>   
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 60"></a-cylinder>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 90"></a-cylinder>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 120"></a-cylinder> 
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 150"></a-cylinder>  
-            </a-box>   
-
-            <a-box   scale="0.3 0.3 1" position="-0.81 5 1" rotation="90 0 90" wireframe=true>
-  <a-torus arc="365" radius="1" radius-tubular="0.04"  color="black"></a-torus>   
- <a-torus arc="365" radius="1.2" radius-tubular="0.07"  color="white"></a-torus>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 0"></a-cylinder>    
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 30"></a-cylinder>   
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 60"></a-cylinder>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 90"></a-cylinder>
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 120"></a-cylinder> 
-            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 150"></a-cylinder>  
             </a-box>  
+
+<a-box   scale="0.3 0.3 1" position="-0.805 0.5 -1" rotation="90 0 0" wireframe=true>
+  <a-torus arc="365" radius="1" radius-tubular="0.04"  color="black"></a-torus>   
+ <a-torus arc="365" radius="1.2" radius-tubular="0.07"  color="green"></a-torus>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 0"></a-cylinder>    
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 30"></a-cylinder>   
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 60"></a-cylinder>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 90"></a-cylinder>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 120"></a-cylinder> 
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 150"></a-cylinder>  
+            </a-box> 
+</a-box>
+
+<!--axel2-->
+  <a-cylinder radius="0.1" height="2" position="-0.81 1.2 1" color="pink"></a-cylinder>      
+ <a-cylinder radius="0.08" height="2.001" position="-0.8 1.2 1" color="#2b2103"></a-cylinder>
+
+
+ <a-box   scale="0.3 0.3 1" position="-0.81 2 1" rotation="90 0 90" wireframe=true>
+  <a-torus arc="365" radius="1" radius-tubular="0.04"  color="black"></a-torus>   
+ <a-torus arc="365" radius="1.2" radius-tubular="0.07"  color="yellow"></a-torus>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 0"></a-cylinder>    
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 30"></a-cylinder>   
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 60"></a-cylinder>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 90"></a-cylinder>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 120"></a-cylinder> 
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 150"></a-cylinder>  
+            </a-box>   
+            
+            
+
+
+
+
+
+
+
+           <a-box   scale="0.3 0.3 1" position="-0.805 0.5 1" rotation="90 0 0" wireframe=true>
+  <a-torus arc="365" radius="1" radius-tubular="0.04"  color="black"></a-torus>   
+ <a-torus arc="365" radius="1.2" radius-tubular="0.07"  color="white"></a-torus>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 0"></a-cylinder>    
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 30"></a-cylinder>   
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 60"></a-cylinder>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 90"></a-cylinder>
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 120"></a-cylinder> 
+            <a-cylinder radius="0.03" height="2" color="#2b2103" rotation="0 0 150"></a-cylinder>  
+            </a-box> 
+
+</a-box>
+
+
+
+
 </a-box>
   
       
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="10
-    " color="#7BC8A4"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="50"
+     color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       <a-camera position="0 1.4 5"></a-camera>
     </a-scene>
