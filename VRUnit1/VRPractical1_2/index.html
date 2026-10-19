@@ -11,7 +11,7 @@
  <a-scene>
 
  <a-entity src="#brick">
-
+<!--floors-->
 <a-entity  class="wall" position="-2.5 4 -2.5" rotation="90 90 0" >
       <a-entity class="plain_wall" position="0 0 0" rotation="0 0 0">
         
@@ -1107,15 +1107,14 @@
 
 
 
-
+<!-- BULDING WALLS -->
 <a-entity class="wall" position="0 0 0" rotation="0 0 0">
 
-<a-entity class="wall" position="0 0 0" rotation="0 0 0">
+<a-entity class="frontwall" position="0 0 0" rotation="0 0 0">
       <a-entity class="plain_wall" position="0 0 0" rotation="0 0 0">
         
         <a-entity class="plank" position="2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+          
           <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
         </a-entity>
 
@@ -1160,13 +1159,12 @@
 
         <a-entity class="plank" position="0 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+        
         </a-entity>
 
         <a-entity class="plank" position="-1 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+          
           <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
         </a-entity>
 
@@ -1188,14 +1186,14 @@
 
         <a-entity class="plank" position="1 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+         
           <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
         </a-entity>
 
         <a-entity class="plank" position="0 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+         
+        
         </a-entity>
 
         <a-entity class="plank" position="-1 0 0">
@@ -1205,7 +1203,7 @@
         </a-entity>
 
         <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+          
           <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
           <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
         </a-entity>
@@ -1222,19 +1220,18 @@
         <a-entity class="plank" position="1 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
           <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
         </a-entity>
 
         <a-entity class="plank" position="0 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
           <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+          
         </a-entity>
 
         <a-entity class="plank" position="-1 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
+          
+         
         </a-entity>
 
         <a-entity class="plank" position="-2 0 0">
@@ -1282,7 +1279,7 @@
       </a-entity>
       <a-entity class="plain_wall" position="0 3 0" rotation="0 0 0">
         
-        <a-entity class="plank" position="2 0 0">
+     <a-entity class="plank" position="2 0 0">
           <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
           <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
           <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
@@ -2337,11 +2334,10 @@
 
 
 <!--Fire escape-->
-
+<a-entity class="fire" position="11 0 -3" rotation="0 90 0" >
   
-  <a-entity class="fire" position="11 0 -3" rotation="0 90 0" >
   
-    <!-- TOP  -->
+<a-entity class="top" position="3 5 0">
   <a-box position="2 10 -2"
     width="3" height="0.12" depth="1.5"
     color="#333333"></a-box>
@@ -2383,9 +2379,53 @@
   <a-box position="3.5 10.4 -1.25"
     width="0.06" height="0.8" depth="0.06"
     color="#222222"></a-box>
+</a-entity>
 
+<a-entity class="middle top" position="-3 0 0">
+  <a-box position="2 10 -2"
+    width="3" height="0.12" depth="1.5"
+    color="#333333"></a-box>
 
+  <!-- Top platform floor grating -->
+  <a-box position="1 10.08 -2"
+    width="0.06" height="0.04" depth="1.5"
+    color="#777777"></a-box>
+  <a-box position="1.5 10.08 -2"
+    width="0.06" height="0.04" depth="1.5"
+    color="#777777"></a-box>
+  <a-box position="2 10.08 -2"
+    width="0.06" height="0.04" depth="1.5"
+    color="#777777"></a-box>
+  <a-box position="2.5 10.08 -2"
+    width="0.06" height="0.04" depth="1.5"
+    color="#777777"></a-box>
+  <a-box position="3 10.08 -2"
+    width="0.06" height="0.04" depth="1.5"
+    color="#777777"></a-box>
 
+  <!-- TOP  RAILINGS -->
+  <a-box position="2 10.8 -1.25"
+    width="3" height="0.06" depth="0.06"
+    color="#222222"></a-box>
+  <a-box position="2 10.8 -2.75"
+    width="3" height="0.06" depth="0.06"
+    color="#222222"></a-box>
+
+  <a-box position="0.5 10.4 -1.25"
+    width="0.06" height="0.8" depth="0.06"
+    color="#222222"></a-box>
+  <a-box position="1.5 10.4 -1.25"
+    width="0.06" height="0.8" depth="0.06"
+    color="#222222"></a-box>
+  <a-box position="2.5 10.4 -1.25"
+    width="0.06" height="0.8" depth="0.06"
+    color="#222222"></a-box>
+  <a-box position="3.5 10.4 -1.25"
+    width="0.06" height="0.8" depth="0.06"
+    color="#222222"></a-box>
+</a-entity>
+
+<a-entity class="middle" position="7 -2 0">
   <!-- MIDDLE PLATFORM -->
   <a-box position="-2 7 -2"
     width="3" height="0.12" depth="1.5"
@@ -2428,8 +2468,9 @@
   <a-box position="-0.5 7.4 -1.25"
     width="0.06" height="0.8" depth="0.06"
     color="#222222"></a-box>
+</a-entity>
 
-   <a-entity class="PLATFORM" position="3 -2 0" rotation="0 0 0" >
+<a-entity class="PLATFORM" position="-3 -3 0" rotation="0 0 0" >
   
   
     <!-- BOTTOM PLATFORM -->
@@ -2582,6 +2623,7 @@
       <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       <a-camera position="0 1.4 5"></a-camera>
+      </a-scene>
   </body>
 </html>
 <!--position="-1.80 0 7.4"-->
