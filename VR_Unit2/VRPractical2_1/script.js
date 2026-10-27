@@ -19,7 +19,12 @@ window.addEventListener("DOMContentLoaded",function() {
     createCloud(x,0,z);
   }
 
-   createHouse(5,10,1);
+  for(let i = 0; i < 100; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    createHouse (x,0,z);
+  }
+   
 
    //Task 2: Use the createCloud(...)  to add several clouds to the scene at various positions.
 
@@ -83,7 +88,13 @@ h.setAttribute("width", 3);
 h.setAttribute("height", 2);
 h.setAttribute("depth",1);
 h.setAttribute("color","brown");
-h.setAttribute("position",`${x} ${y} ${z}`);
+h.setAttribute("position",`${1} ${0} ${1}`);
+
+let hu= document.createElement("a-cone");
+hu.setAttribute("radius-bottom", 2);
+hu.setAttribute("radius-top", 0.5);
+hu.setAttribute("color","red");
+hu.setAttribute("position",`${1} ${4} ${1}`);
 
 house.setAttribute("position",{x:x, y:y, z:z});
 scene.append(h);
