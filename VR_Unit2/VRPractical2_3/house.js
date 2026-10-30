@@ -8,13 +8,16 @@ h.setAttribute("height", 2);
 h.setAttribute("depth",1);
 h.setAttribute("color","brown");
 h.setAttribute("position",`${1} ${0} ${1}`);
-
+this.obj.append( h );
+  
 let hu= document.createElement("a-cone");
 hu.setAttribute("radius-bottom", 2);
 hu.setAttribute("radius-top", 0.5);
 hu.setAttribute("color","red");
 hu.setAttribute("position",`${1} ${4} ${1}`);
+this.obj.append( hu );
 
+  
 this.obj.setAttribute("position",{x:x, y:y, z:z});
 scene.append(this.obj);
 
