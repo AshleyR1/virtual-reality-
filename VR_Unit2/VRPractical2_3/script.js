@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded",function() {
     let z = rnd(-20,20);
     let tree = new Tree(x, 0 , z);
     let cloud= new Cloud(x, 0 ,z);
-    let house= new house(0, y ,z);
+    let house= new house(x, 0 ,z);
   }
 
 })
