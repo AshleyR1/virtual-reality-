@@ -24,7 +24,7 @@ constructor(x,y,z){
       clo.setAttribute("radius", 1);
       clo.setAttribute("color","white");
       clo.setAttribute("position",`${6} ${5} ${1}`)
-      this.obj.append(clo);
+      this.obj.append(this.obj);
 
 
 }
