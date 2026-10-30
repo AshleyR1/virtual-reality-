@@ -24,8 +24,10 @@ constructor(x,y,z){
       clo.setAttribute("radius", 1);
       clo.setAttribute("color","white");
       clo.setAttribute("position",`${6} ${5} ${1}`)
-      this.obj.append(this.obj);
-
+      this.obj.append(clo);
+  
+    this.obj.setAttribute("position",{x:x, y:y, z:z});
+    scene.append( this.obj )
 
 }
 
